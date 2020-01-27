@@ -36,7 +36,7 @@ object Functions extends App {
     else aString + repeat(aString, times - 1)
   }
 
-  println(repeat("hello ", 3))
+  println(repeat("hello ", 3)) // hello hello hello
 
   // The return type of a function can be Unit
   // We can use functions with side effects when they have nothing to do with computation
