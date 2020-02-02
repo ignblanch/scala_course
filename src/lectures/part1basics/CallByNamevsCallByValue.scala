@@ -28,6 +28,10 @@ object CallByNamevsCallByValue extends App {
   It evaluates the param when it needs it (also it won't evaluate it if it does not need it)
   (see example below)
   In the example it evaluates it twice and therefore it changes
+
+
+  WHEN WE CALL BY VALUE THE PARAM IS AN ACTUAL VALUE - IT DOES NOT CHANGE DURING EXECUTION OF THE FUNCTION
+  WHEN WE CALL BY NAME THE PARAM IS AN EXPRESSION - IT GETS EVALUATED EVERY TIME IT IS USED IN THE EXECUTION
   */
 
   def infinite(): Int = 1 + infinite()
