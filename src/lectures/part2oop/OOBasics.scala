@@ -4,9 +4,9 @@ object OOBasics extends App {
 
   val person = new Person("John", 26) // instantiation
   /*
-  class parameters are NOT FIELDS
+  class parameters are NOT MEMBER FIELDS
   we cannot access directly a class parameter ex: person.name (would throw an error)
-  If we want a parameter to be accessible as a field we have to add the keyword val to the constructor declaration
+  If we want a parameter to be accessible as a member field we have to add the keyword val to the constructor declaration
   ex: person.age is ok because in the constructor we have val age: Int
   We can access class parameters INSIDE the class with the this keyword ex. this.name
   We can also add default values for parameters and then we don't pass it to the constructor
