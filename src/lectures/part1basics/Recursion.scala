@@ -3,6 +3,7 @@ package lectures.part1basics
 import scala.annotation.tailrec
 
 object Recursion extends App {
+  
   def factorial(n: Int): Int =
     if(n == 1) n
     else {
@@ -13,10 +14,10 @@ object Recursion extends App {
     }
 
   println(factorial(10)) //3628800
+  // println(factorial(5000)) // stack overflow error
   /*
   JVM executes recursive functions and each time it adds it to a stack.
-  It needs to store intermediate results somewhere
-  println(factorial(5000) will throw stack overflow error.
+  It needs to store intermediate results somewhere.
   JVM cannot process so many calls to a recursive function
   We need to introduce a new concept: tail recursion
   */
