@@ -140,8 +140,8 @@ object ListTest extends App {
   val anotherListOfIntegers: MyList[Int] = new Cons(4, new Cons(5, Empty))
   val listOfStrings: MyList[String] = new Cons("Hello", new Cons("Scala", Empty))
 
-  println(listOfIntegers.toString)
-  println(listOfStrings.toString)
+  println(listOfIntegers.toString) // [1, 2, 3]
+  println(listOfStrings.toString) // [Hello, Scala]
 
   println(listOfIntegers.map(_ * 2).toString)
 
